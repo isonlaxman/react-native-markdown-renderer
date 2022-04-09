@@ -51,7 +51,7 @@ const renderRules = {
     );
   },
   // a
-  link: (node, children, parent, styles) => {
+  link: (node, children, parent, styles, onLinkPress) => {
     return (
       <Text key={node.key} style={styles.link} onPress={() => openUrl(node.attributes.href, onLinkPress)}>
         {children}
