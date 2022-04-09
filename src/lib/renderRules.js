@@ -63,7 +63,7 @@ const renderRules = {
     return (
       <TouchableWithoutFeedback
         key={node.key}
-        onPress={() => openUrl(node.attributes.href, onLinkPress))}
+        onPress={() => openUrl(node.attributes.href, onLinkPress)}
         style={styles.blocklink}
       >
         <View style={styles.image}>{children}</View>
